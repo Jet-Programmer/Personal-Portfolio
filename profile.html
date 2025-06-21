@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanctification Yeboah | Tech Innovator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+    :root {
+      --primary-color: #0074D9;
+      --secondary-color: #001f3f;
+      --accent-color: #e8f0fe;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, footer {
+      background: linear-gradient(to right, #001f3f, #0074D9);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 130px;
+      height: 150px;
+      border-radius: 45%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #fff;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 3rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1, h2 {
+      color: #001f3f;
+    }
+    .project, .testimonial, .form-section {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid #0074D9;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+    .contact a, .resume-link a {
+      color: #0074D9;
+      text-decoration: none;
+    }
+    .contact a:hover, .resume-link a:hover {
+      text-decoration: underline;
+    }
+    input, textarea, select, button {
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+    }
+    button {
+      background-color: #0074D9;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:hover {
+      transform: scale(1.05);
+      background-color: #005fa3;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+      .dark-mode {
+      background: #1a1a1a;
+      color: #eee;
+    }
+    .dark-mode header,
+    .dark-mode footer {
+      background: linear-gradient(to right, #111, #333);
+      color: #eee;
+    }
+    .dark-mode .project,
+    .dark-mode .testimonial,
+    .dark-mode .form-section {
+      background: #2a2a2a;
+      color: #eee;
+      border-left-color: var(--primary-color);
+    }
+    .toggle-container {
+      margin-top: 1rem;
+    }
+    .toggle-btn {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      background-color: var(--primary-color);
+      color: #fff;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .toggle-btn:hover {
+      background-color: #005fa3;
+    }
+  </style>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body style="background: linear-gradient(to bottom, #f4f7fa, #e8f0fe); transition: background 0.5s ease;" onload="document.getElementById('loader').style.display='none'; AOS.init();">
+  <div id="loader" style="position: fixed; background: #fff; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; color: #0074D9;">
+    Loading site...
+  </div>
+  <header>
+    <img src="pic.jpg" alt="Sanctification Yeboah Profile Picture">
+    <h1>Sanctification Amankwah Yeboah</h1>
+    <p>IB Student | Future AI Engineer | Community Builder</p>
+    <nav>
+      <div style="margin: 1rem 0;">
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+        <a href="#resume"><i class="fas fa-file"></i> Résumé</a>
+        <a href="#blog"><i class="fas fa-blog"></i> Blog</a>
+        <a href="#testimonials"><i class="fas fa-quote-left"></i> Testimonials</a>
+        <a href="#join"><i class="fas fa-users"></i> Join Team</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about" class="section" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>I’m an IB student at SOS-HGIC in Accra, Ghana, with a passion for solving local problems using technology. My work includes building AI models, web platforms, and youth-focused tools that promote education, innovation, and equity. I'm currently pursuing opportunities with Fulbright and Mastercard Foundation to further my studies in Computer Science and Engineering.</p>
+    </section>
+
+    <section id="projects" class="section" data-aos="fade-up" data-aos-delay="100">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>IB Score Predictor (AI)</h3>
+        <p>Developed a Python-based neural network to forecast IB scores using performance data, helping students manage study time and stress.</p>
+      </div>
+      <div class="project">
+        <h3>Sports Attendance Dashboard</h3>
+        <p>A full-stack PHP/MySQL system to track student athlete attendance and generate visual reports for teachers and coaches.</p>
+      </div>
+      <div class="project">
+        <h3>Youth Engagement Chatbot</h3>
+        <p>An interactive chatbot built with Python to deliver quizzes, riddles, and motivational content for student engagement.</p>
+      </div>
+      <div class="project">
+        <h3>E-Commerce Website</h3>
+        <p>Created a functional online store for a local business, introducing modern digital tools and payment solutions.</p>
+      </div>
+    </section>
+
+    <section id="resume" class="section resume-link" data-aos="fade-up" data-aos-delay="200">
+      <h2>Résumé</h2>
+      <p>You can download my professional résumé here: <a href="Personal CV.pdf" download>Download PDF</a></p>
+    </section>
+
+    <section id="blog" class="section" data-aos="fade-up" data-aos-delay="300">
+      <h2>Blog</h2>
+      <div class="project">
+        <h3>Why Innovation Must Begin Locally</h3>
+        <p>A reflection on my visit to Google Research Ghana and how it reshaped my view of African tech potential.</p>
+      </div>
+      <div class="project">
+        <h3>Building My First AI Model as a Student</h3>
+        <p>A journey through coding, failure, and finally building a tool that helps classmates understand their academic progress.</p>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section" data-aos="fade-up" data-aos-delay="400">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <p>"Sanctification is a rare student—technically brilliant and deeply compassionate. His leadership has had a visible impact on both his peers and our community." – School Counselor</p>
+      </div>
+      <div class="testimonial">
+        <p>"He doesn't just build software. He builds purpose-driven solutions. His chatbot project truly helped engage struggling students in new ways." – CS Teacher</p>
+      </div>
+    </section>
+
+    <section id="join" class="section form-section" data-aos="fade-up" data-aos-delay="500">
+  <h2>Join My AI Research Team</h2>
+  <p>I'm assembling a collaborative research group focused on using AI to solve African development challenges. If you're a student, coder, researcher, or enthusiast passionate about innovation and impact, I’d love to hear from you.</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeiYcNdjcCp0Jsth8XiBUgXFjtvVnp4Uc5zTXiwW8wx8sySEQ/viewform?embedded=true" width="100%" height="801" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</section>
+
+    <section id="resources" class="section" data-aos="fade-up" data-aos-delay="600">
+      <h2>Resources for Aspiring AI Enthusiasts</h2>
+      <p>If you're just getting started in AI, tech, or computer science, here are some curated resources to help you grow:</p>
+      <ul>
+        <li><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Andrew Ng's Machine Learning (Coursera)</a></li>
+        <li><a href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn - Practical Data Science & AI</a></li>
+        <li><a href="https://www.fast.ai/" target="_blank">Fast.ai - Deep Learning for Everyone</a></li>
+        <li><a href="https://github.com/ossu/computer-science" target="_blank">OSSU Open Source Computer Science Curriculum</a></li>
+        <li><a href="https://ai.google/education/" target="_blank">Google AI Education</a></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact" data-aos="fade-up" data-aos-delay="700">
+      <h2>Contact</h2>
+      <p>Feel free to reach out via <a href="mailto:yeboah_s@soshgic.edu.gh">yeboah_s@soshgic.edu.gh</a> or connect with me on <a href="https://www.linkedin.com/in/sanctificationyeboah">LinkedIn</a>.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sanctification Yeboah | Designed with purpose and impact in mind.</p>
+  </footer>
+</body>
+</html>
